@@ -33,6 +33,6 @@ do_install() {
     done
 }
 
-FILES_${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf"
+FILES:${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf"
 
 COMPATIBLE_MACHINE = "xpeedc"
