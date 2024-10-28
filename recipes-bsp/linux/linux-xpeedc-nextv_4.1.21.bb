@@ -22,7 +22,7 @@ PKG:${KERNEL_PACKAGE_NAME}-image = "kernel-image"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "https://source.mynonpublic.com/xtrend/linux-${PV}.tar.xz \
+SRC_URI += "http://downloads.openpli.org/archive/xpeedc/linux-${PV}.tar.xz \
 	file://kernel-add-support-for-gcc6.patch \
 	file://kernel-add-support-for-gcc7.patch \
 	file://kernel-add-support-for-gcc8.patch \

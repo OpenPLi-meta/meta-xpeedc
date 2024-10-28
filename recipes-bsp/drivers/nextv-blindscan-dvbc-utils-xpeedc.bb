@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-SRC_URI = "https://source.mynonpublic.com/xtrend/xpeedc-dvbc-blindscan-${PV}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/xpeedc/xpeedc-dvbc-blindscan-${PV}.zip"
 
 PROVIDES += "virtual/blindscan-dvbc"
 RPROVIDES:${PN} += "virtual-blindscan-dvbc"
