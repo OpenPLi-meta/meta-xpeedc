@@ -23,13 +23,11 @@ RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
 SRC_URI += "http://downloads.openpli.org/archive/xpeedc/linux-${PV}.tar.xz \
-	file://kernel-add-support-for-gcc6.patch \
-	file://kernel-add-support-for-gcc7.patch \
-	file://kernel-add-support-for-gcc8.patch \
-	file://kernel-add-support-for-gcc9.patch \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
 	file://defconfig \
+	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
+	file://fix-build-with-binutils-2.41.patch \
 	"
 
 inherit kernel machine_kernel_pr
